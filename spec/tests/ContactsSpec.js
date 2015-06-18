@@ -9,11 +9,11 @@ describe("Contacts Test Suite", function(){
 	describe("hello world", function(){
 
 		it("hello world",function(done){
-		    
+
 		    request.get(base_url, function(error, response, body){
 
 				expect(response.statusCode).toBe(200);
-				//expect(body).toBe("Hello World");
+				expect(body).toBe("Hello World");
 
 				done();
 		    });
@@ -32,11 +32,11 @@ describe("Contacts Test Suite", function(){
 			contact.phone = "23002300";
 
 			console.log(JSON.stringify(contact));
-		    
+
 		    request.post({url: contacts_url,
 		    			  body: contact,
 		    			  json: true
-		    			}, 
+		    			},
 		    		    function(error, response, body){
 
 							expect(response.statusCode).toBe(200);
