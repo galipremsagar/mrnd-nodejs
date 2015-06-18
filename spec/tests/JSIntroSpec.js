@@ -1,5 +1,6 @@
 
 describe("JSIntro Test Suite", function(){
+	console.log("Here 123!!!");
 	var JSIntro = require("../../src/JSIntro");
 
 	describe("JSIntro-Sum", function(){
