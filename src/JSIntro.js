@@ -33,5 +33,6 @@ exports.ReverseString = function(str){
 
 
 exports.ReverseArrayOfStrings = function(arrayOfStrings){
-  
+  arrayOfStrings.reverse();
+  return arrayOfStrings;
 }
